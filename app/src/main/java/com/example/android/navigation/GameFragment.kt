@@ -28,7 +28,7 @@ import androidx.navigation.findNavController
 import com.example.android.navigation.databinding.FragmentGameBinding
 import java.util.*
 
-class GameFragment : Fragment() {
+class  GameFragment : Fragment() {
     data class Question(
             val text: String,
             val answers: List<String>)
@@ -100,7 +100,7 @@ class GameFragment : Fragment() {
                         binding.invalidateAll()
                     } else {
                         // We've won!  Navigate to the gameWonFragment.
-                       view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment())
+                       view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions, questionIndex ))
                     }
                 } else {
                     // Game over! A wrong answer sends us to the gameOverFragment.
