@@ -24,7 +24,6 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.android.navigation.databinding.FragmentGameWonBinding
 
 
@@ -40,7 +39,7 @@ class GameWonFragment : Fragment() {
             view.findNavController().navigate(R.id.action_gameWonFragment_to_titleFragment)
         }
         var args = GameWonFragmentArgs.fromBundle(arguments!!)
-        Toast.makeText(context, "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "Mensaje ${args.numMensaje} , NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}", Toast.LENGTH_SHORT).show()
         return binding.root
     }
 }
