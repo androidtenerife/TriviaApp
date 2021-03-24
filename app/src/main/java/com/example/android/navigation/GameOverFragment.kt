@@ -39,7 +39,7 @@ class GameOverFragment : Fragment() {
 
         }
         var args = GameOverFragmentArgs.fromBundle(arguments!!)
-        Toast.makeText(context, "Mensaje ${args.numMensaje} ", Toast.LENGTH_LONG).show()
+        Toast.makeText(context, " ${args.numMensaje} ", Toast.LENGTH_LONG).show()
 
         setHasOptionsMenu(true)
         return binding.root

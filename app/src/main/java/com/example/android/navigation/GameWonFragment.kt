@@ -40,6 +40,8 @@ class GameWonFragment : Fragment() {
         }
         var args = GameWonFragmentArgs.fromBundle(arguments!!)
         Toast.makeText(context, "Mensaje ${args.numMensaje} , NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}", Toast.LENGTH_SHORT).show()
+       setHasOptionsMenu(true)
+
         return binding.root
     }
 }
