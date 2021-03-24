@@ -44,5 +44,6 @@ class GameWonFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
+        inflater?.inflate(R.menu.winner_menu,menu)
     }
 }
